@@ -13,7 +13,7 @@ select
 		when category = 'outdoor' then 'Outside Workshop'
 		when category = 'educational' then 'Learning Workshop'
 		else 'General Workshop'
-	end
+	end as workshop
 from
 	children c
 left join wish_lists wl 
